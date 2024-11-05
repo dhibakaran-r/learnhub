@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/learnhub/static/css/main.c42863b9.css",
+    "main.js": "/learnhub/static/js/main.91ea1fc5.js",
+    "static/media/AboutDashboard.png": "/learnhub/static/media/AboutDashboard.d461cfd209bc0d1be3b7.png",
+    "static/media/thought.png": "/learnhub/static/media/thought.612de297084ac89bac9b.png",
+    "static/media/tailus.png": "/learnhub/static/media/tailus.877c9da48ad6bc5b3a1a.png",
+    "static/media/medal.png": "/learnhub/static/media/medal.4f14f3bf6466c21f6a52.png",
+    "static/media/training.png": "/learnhub/static/media/training.e90dee94ebcdee5e5ff2.png",
+    "static/media/Background Hero.svg": "/learnhub/static/media/Background Hero.b38b02e101d66db08a53a5dcbad42a90.svg",
+    "index.html": "/learnhub/index.html",
+    "main.c42863b9.css.map": "/learnhub/static/css/main.c42863b9.css.map",
+    "main.91ea1fc5.js.map": "/learnhub/static/js/main.91ea1fc5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c42863b9.css",
+    "static/js/main.91ea1fc5.js"
+  ]
+}
