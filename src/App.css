@@ -1,38 +1,635 @@
-.App {
+
+:root{
+  color: #F8FAFC;
+}
+
+
+body{
+  font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding: 0%;
+  margin: 0%;
+}
+
+a{
+  color: #F8FAFC;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+/* Navbar CSS */
+
+.nav-container{
+  width: 100%;
+  position: relative;
+  top: 1rem;
+  /* height: 6rem; */
+  /* background-color: #8cc5ff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  position: fixed;
+  top: 1.5rem;
+  z-index: 10;
+  width: 62rem;
+  height: 1.5rem;
+  padding: 1rem;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.77);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid #F3F4F6;
+}
+
+.navbar .logo{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #C9FD02;
+}
+
+.navbar .admin{
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 8px;
+}
+
+/* Navbar CSS end */
+
+
+/* Hero CSS */
+
+.hero-container{
+  /* width: 100%; */
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.hero-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  inset: 0px;
+  /* position: absolute; */
+  z-index: -10;
+}
+
+.hero-container .hero-content{
+  width: 100%;
+  position: absolute;
+  top: 11.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.hero-content .desc-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.desc-container .hero-intro{
+  width: 49%;
+  font-size: 3.75rem;
+  line-height: 1;
+  margin: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.desc-container .hero-desc{
+  width: 40%;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #4B5563;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.desc-container .hero-btn{
+  padding: 1.1rem 2rem;
+  background-color: #FACC15;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  border-radius: 50px;
+}
+
+/* Hero CSS end */
+
+/* partners CSS */
+
+.partners-container{
+  position: relative;
+  bottom: 3.5rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #17150f, #000) !important;
+  z-index: 2;
+}
+.partners-container .partners-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5.5rem 14rem 0rem 14rem ;
+}
+
+/* .partners-block h1{
+  font-size: 3rem;
+  font-weight: 700;
+} */
+
+.partners-block .partners-logo{
+  width: 100%;
+  padding: 0%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.partners-logo .logo-li{
+  width: 10rem;
+  padding: 1rem;
+}
+
+.partners-block .partners-btn{
+  width: 8rem;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  padding: 0.25rem 1.5rem;
+  background-color: #C9FD02;
+  color: #000000;
+  outline: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* partners CSS end */
+
+/* about CSS */
+
+.about-container{
+  margin: 0rem 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 6rem;
+}
+
+.about-container .about-head{
+  width: 36rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about-container .about-head p{
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  margin:0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-container .about-head h1{
+  line-height: 1;
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
 }
+
+.about-container .about-body{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-body .about-block{
+  padding-right: 6rem;
+  /* height: 20rem; */
+}
+
+.about-block > :not([hidden]) + :not([hidden]) {
+  margin-top: 3rem;
+}
+
+.about-block .about-list{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-list .about-icon{
+  width: 36px;
+}
+
+.about-list .about-desc h3{
+  margin: 0%;
+  font-size: 20px;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+.about-list .about-desc p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 12px;
+  margin-bottom: 0%;
+  color: #cbd5e1;
+}
+
+.about-body .about-banner{
+  width: 92%;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+/* about CSS end */
+
+/* users CSS */
+
+.users-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.users-container .users-wrap{
+  padding: 0 2rem;
+  margin: 0 2rem;
+}
+
+.users-wrap .users-block{
+  max-width: 80rem;
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+
+}
+
+.users-block .users-desc-block{
+  width: 39rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.users-desc-block .users-desc{
+  width: 37rem;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.users-desc-block .users-desc p{
+  margin: 0%;
+ }
+
+.users-desc-block .users-desc p:nth-child(1){
+  color: #16A34A;
+}
+
+.users-desc-block .users-desc p:nth-child(2){
+  color: #0EA5E9;
+}
+
+.users-desc-block .users-desc p:nth-child(3){
+  color: #DC2626;
+}
+
+.users-block .users-detail-wrap{
+  width: 40rem;
+  width: fit-content;
+  margin-top: 0%;
+}
+
+.users-detail-wrap .users-detail{
+  width: 30rem;
+  /* width: fit-content;
+  margin-top: 0%; */
+}
+
+.users-detail .user-header{
+  margin: 0;
+  padding-top: 2.75rem;
+  font-size: 20px;
+  line-height: 1.75rem;
+
+}
+.users-detail .users-count-wrap{
+
+}
+
+.users-count-wrap .users-count{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.users-count .counts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.counts .count-card{
+  text-align: center;
+}
+
+.counts .count-card div{ 
+  margin-bottom: 12px;
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: #C9FD02;
+  padding: 2px 12px;
+  font-size: 14px;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.count-card p{
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1;
+  padding: 0%;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+/* users CSS end */
+
+
+/* footer CSS */
+
+.footer-container{
+  padding: 0 2rem;
+}
+
+.footer-container .footer-wrap{
+  border-top-width: 1px;
+  border-color: rgba(15, 23, 42, 0.05);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer-wrap h1{
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 2.5rem;
+  font-weight: 900;
+  color: #C9FD02;
+}
+
+.footer-wrap p{
+  margin: 0%;
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #64748b;
+}
+
+.footer-wrap .footer-nav{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-nav div{
+  margin-right: 1rem;
+  margin-left: 1rem;
+  height: 1rem;
+  width: 1px;
+  background-color: rgba(241, 245, 249, 0.2);
+}
+
+/* footer CSS end */
+
+
+/* form page CSS */
+
+.formpg{
+  padding: 1.5rem;
+}
+
+.form-container{
+  padding: 1rem 2rem;
+}
+
+.form-container .user-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .user-form h1{
+  text-align: center;
+  font-size: 30px;
+  line-height: 2.25rem;
+  font-weight: 900;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  color: #C9FD02;
+}
+
+.form-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 5rem;
+}
+
+.form-wrap .input-wrap{
+  width: 40%;
+  padding: 0rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-wrap .form-input{
+  width: 100%;
+}
+
+.form-input label{
+  font-size: 30px;
+  line-height: 2.25rem;
+  font-weight: 900;
+  color: #C9FD02;
+}
+
+.form-input .input{
+  margin-top: 0.5rem;
+  width: 34rem;
+  padding: 1.7rem 1rem;
+  background-color: #f3f4f6;
+  border: none;
+  border-bottom: 1px solid #4b5563;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-input .opt{
+  width: 36rem;
+}
+
+.form-btn{
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  padding: 2rem;
+  margin-top: 2rem;
+  transition: 1s;
+}
+
+.form-btn button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.75rem;
+  border: 2px solid #F8FAFC;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  color: #F8FAFC;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+.form-btn button:hover{
+  background-color: #C9FD02;
+  color: #F8FAFC;
+}
+
+/* form page CSS end */
+  
+/* user card CSS */
+
+.card-container{
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.card-container .card-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-wrap .user-card{
+  width: 22.2rem;
+  padding: 1.5rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.user-card .user-name{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user-card .user-name .avator{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #f3f4f6;
+  background-color: #C9FD02;
+  font-size: 20px;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.user-card .user-name h3{
+  margin: 0%;
+  font-size: 20px;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.user-card .user-details{
+  color: #000;
+}
+
+.user-card .user-details p{
+  margin: 0%;
+  line-height: 1.55;
+}
+
+.user-details > :not([hidden]) + :not([hidden]) {
+  margin-top: 0.5rem;
+}
+
+.user-card .delete-btn{
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  color: #f3f4f6;
+  background-color: #ef4444;
+  border: none;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.user-card .delete-btn:hover{
+  background-color: #DC2626;
+}
+
+
+/* user card CSS end */
