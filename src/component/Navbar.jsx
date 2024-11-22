@@ -6,7 +6,7 @@ function Navbar() {
     <header className='nav-container'>
         
         <nav className='navbar'>
-            <Link to='/' className='logo'>LearnHub</Link>
+            <Link to='/' className='logo'>SkillHub</Link>
             <Link to='/form' className='admin'>Admin</Link>
         </nav>
 

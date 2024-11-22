@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className='footer-container'>
       <div className='footer-wrap'>
-        <h1>LearnHub</h1>
+        <h1>SkillHub</h1>
         <p>&copy; 2022 Tailwind Labs Inc. All rights reserved.</p>
         <div className='footer-nav'>
           <Link to='/form'>Form</Link>

@@ -1,6 +1,5 @@
 {
-  "homepage": "https://dhibakaran-r.github.io/learnhub",
-  "name": "learnhub",
+  "name": "skillhub",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

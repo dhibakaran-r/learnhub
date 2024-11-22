@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter
-       basename='/learnhub'
+      //  basename='/learnhub'
        >
         <Routes>
           <Route path='/' element={<LearnHub />} />
